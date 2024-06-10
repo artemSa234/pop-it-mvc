@@ -19,11 +19,16 @@ class Auth
    }
 
    //Вход пользователя по модели
-   public static function login(IdentityInterface $user): void
-   {
-       self::$user = $user;
-       Session::set('id', self::$user->getId());
-   }
+    public static function login(IdentityInterface $user): void
+    {
+        self::$user = $user;
+        Session::set('id', self::$user->getId());
+    }
+
+    public static function role()
+    {
+        return self::$user::class::role(self::$user["id"]);
+    }
 
    //Аутентификация пользователя и вход по учетным данным
    public static function attempt(array $credentials): bool
@@ -57,11 +62,13 @@ class Auth
        Session::clear('id');
        return true;
    }
-   public static function generateCSRF(): string
-   {
-      $token = md5(time());
-      Session::set('csrf_token', $token);
-      return $token;
-   }
-   
+//Генерация нового токена для CSRF
+public static function generateCSRF(): string
+{
+   $token = md5(time());
+   Session::set('csrf_token', $token);
+   return $token;
+}
+
+
 }

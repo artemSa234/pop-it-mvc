@@ -1,19 +1,19 @@
 {
-    "name": "artemsa234/demo-oop",
+    "name": "dimkadanilovv/1st-php-practice",
     "description": "Description",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "Artem",
-            "email": "156803343+artemSa234@users.noreply.github.com"
+            "name": "DimkaDanilovv",
+            "email": "DanilovDmitriy769d@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
         "php": "^7.4 | ^8.0",
-        "illuminate/database": "^12.0@dev",
-        "illuminate/events": "^12.0@dev",
+        "illuminate/database": "^10.0@dev",
+        "illuminate/events": "^10.0@dev",
         "nikic/fast-route": "^2.0@dev"
     },
     "autoload": {
@@ -22,5 +22,4 @@
             "": "app/"
         }
     }
- 
 }

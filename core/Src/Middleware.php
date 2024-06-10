@@ -30,12 +30,15 @@ class Middleware
    {
        $this->middlewareCollector = new RouteCollector(new Std(), new MarkBased());
    }
-   public function go(string $httpMethod, string $uri, Request $request): Request
+
+   //Запуск всех middlewares для текущего маршрута
+   //Запуск всех middlewares
+public function go(string $httpMethod, string $uri, Request $request): Request
 {
    return $this->runMiddlewares($httpMethod, $uri, $this->runAppMiddlewares($request));
 }
 
-   //Запуск всех middlewares для текущего маршрута
+//Запуск всех middlewares для текущего маршрута
 private function runMiddlewares(string $httpMethod, string $uri, Request $request): Request
 {
    //Получаем список всех разрешенных классов middlewares из настроек приложения
@@ -72,4 +75,6 @@ private function runAppMiddlewares(Request $request): Request
        $dispatcherMiddleware = new Dispatcher($this->middlewareCollector->getData());
        return $dispatcherMiddleware->dispatch($httpMethod, $uri)[1] ?? [];
    }
+
+   
 }

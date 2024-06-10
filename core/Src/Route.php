@@ -100,6 +100,7 @@ class Route
            $action = $handler[1];
            call_user_func([new $class, $action], ...$vars);
            break;
-        }
-    }
-  }
+   }
+}
+
+}
