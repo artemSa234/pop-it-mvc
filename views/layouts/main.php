@@ -46,64 +46,62 @@
 </main>
 
 <style>
-   header{
-        background-color: white;
-        padding: 10px 0;
-    }
-   a{
-      color: black;
-      margin-left: 25px;
-   }
-   .center{
-    text-align: center;
-    padding: 5px 10px;
-    margin-top: 40px;
-    background-color: white;
-  }
-  label{
-   text-align: start;
-  }
-  .column{
-   display: flex;
-   flex-direction: column;
-   gap:10px;
-   width: 300px;
-   
-   
-  }
-  .add_employees > button{
-    width: 40px;
-    
-  }
-  form{
-    display: flex;
-    justify-content: center;
-  }
-  button:hover{
-    background-color: grey;
-  }
+/* Обнуляем отступы и поля для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  .count_input{
-    width: 40px;
-    margin-left: 20px;
-  }
-  form > div{
-    display: flex;
-    justify-content: center;
-  }
-  #department_button{
-    width: 65px;
-    margin-left: 20px;
-  }
+/* Устанавливаем стили для body */
+body {
+    font-family: Arial, sans-serif; /* Используем шрифт Arial или его аналоги */
+    background-color: #f8f9fa; /* Цвет фона */
+    color: #333; /* Цвет текста */
+}
 
-  #emp_button{
-    width: 85px;
-    margin-left: 20px;
-  }
+/* Стили для навигационного меню */
+nav {
+    background-color: #007bff; /* Цвет фона навигационного меню */
+    padding: 10px 20px; /* Внутренние отступы */
+}
 
-  .list_ul{
-    text-align: start;
-  }
+nav a {
+    color: #fff; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    margin-right: 20px; /* Отступы между ссылками */
+    font-weight: bold; /* Жирный шрифт */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+nav a:hover {
+    color: #cce5ff; /* Цвет ссылки при наведении */
+}
+
+/* Стили для главного контента */
+main {
+    padding: 20px; /* Внутренние отступы */
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для кнопок */
+button {
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Убираем границу */
+    background-color: #007bff; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
    </style>
 
 </body>
