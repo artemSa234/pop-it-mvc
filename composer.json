@@ -1,12 +1,12 @@
 {
-    "name": "dimkadanilovv/1st-php-practice",
+    "name": "artemSa234/pop-it-mvc",
     "description": "Description",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "DimkaDanilovv",
-            "email": "DanilovDmitriy769d@gmail.com"
+            "name": "artemSa234",
+            "email": "salnikov_artem2005@mail.ru"
         }
     ],
     "minimum-stability": "dev",
